@@ -1,0 +1,22 @@
+{
+  "name": "webpack-lazy-test",
+  "version": "1.0.0",
+  "main": "js/init.js",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "scripts": {
+    "build": "rm -rf ./duplicateDependency && webpack --config webpack.config.js",
+    "build-max-size": "rm -rf ./lib && webpack --config webpack.config.maxSize.js",
+    "b": "rm -rf ./lib && node ./webNode.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1"
+  }
+}
